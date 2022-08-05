@@ -162,7 +162,7 @@ def main(wf):
                                 filename + " | " + gist["content"].replace("\n", "")[0:100],
                                 arg=gist["html_url"] + "@@@gist@@@" + gist["content"],
                                 copytext=gist["url"],
-                                valid=False,
+                                valid=True,
                                 icon="icons/error.png".format(extension.lower()))
                 else:
                     wf.add_item(gist['description'],
